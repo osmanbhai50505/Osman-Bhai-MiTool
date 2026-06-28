@@ -37,9 +37,10 @@ Open your Termux app and execute the following commands one by one:
 1. **Grant Storage Permission:**
 ```bash
 termux-setup-storage
-
+````
 ### 🚀 Step 3: Run the Official Osman Bhai MiTool Script
 Copy and paste the following link into your Termux to download and run the tool:
 
 ```bash
 cd ~ && curl -sS -H "Cache-Control: no-cache" [https://raw.githubusercontent.com/osmanbhai50505/Osman-Bhai-MiTool/main/install.sh](https://raw.githubusercontent.com/osmanbhai50505/Osman-Bhai-MiTool/main/install.sh) | bash
+````
