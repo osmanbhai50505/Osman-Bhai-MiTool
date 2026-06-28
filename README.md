@@ -12,44 +12,26 @@
 <!-- Glowing Badges Section -->
 ![](https://img.shields.io/badge/Compatible%20with%20Android(Termux)-black?logo=android&logoColor=a4c639&style=for-the-badge)
 
-<!-- Animated Navigation Buttons -->
-<p align="center">
-  <a href="#-main-features--to-do-list">
-    <img src="https://img.shields.io/badge/🎯--Features-brightgreen?style=for-the-badge&logo=github&logoColor=white" alt="Features" />
-  </a>
-  <a href="https://t.me/osmanbhaiofficials" target="_blank">
-    <img src="https://img.shields.io/badge/📢--Support-blue?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram Support" />
-  </a>
-  <a href="#-clean-installation-guide">
-    <img src="https://img.shields.io/badge/📥--Install-orange?style=for-the-badge&logo=termux&logoColor=white" alt="Install Guide" />
-  </a>
-</p>
-
-<p align="center">
-🚀 **Version:** ![](https://img.shields.io/badge/1.0.0-brightgreen?style=flat-square) | 📝 **Changelog:** [![Changelog](https://img.shields.io/badge/View--Updates-orange?style=flat-square)](https://github.com/osmanbhai50505/Osman-Bhai-MiTool/blob/main/CHANGELOG.md)
-</p>
+🚀 **Version:** ![](https://img.shields.io/badge/1.0.0-brightgreen?style=flat-square) | 📝 **Changelog:** [![Changelog](https://img.shields.io/badge/View--Updates-orange?style=flat-square)](https://github.com/osmanbhai50505/Osman-Bhai-MiTool/blob/main/CHANGELOG.md) | 📢 **Support:** [![Telegram](https://img.shields.io/badge/Telegram--Channel-0088cc?style=flat-square&logo=telegram)](https://t.me/osmanbhaiofficials)
 
 ---
 
 </div>
 
-## <img src="https://raw.githubusercontent.com/ABSphreak/ABSphreak/master/greetings.gif" width="30px"> 🎯 Main Features & To-Do List
+## 🎯 MiTool To-Do List:
 
-- [x] <img src="https://img.icons8.com/fluent/48/000000/unlock-partially.png" width="20px"> **Unlock Bootloader**
-- [x] <img src="https://img.icons8.com/fluent/48/000000/flash-on.png" width="20px"> **Flash Fastboot ROM** 
-- [ ] <img src="https://img.icons8.com/fluent/48/000000/settings.png" width="20px"> **More Advanced Features**
+- [x] 🔓 Unlock Bootloader
+- [x] ⚡ Flash Fastboot ROM
+- [ ] ⚙️ More Advanced Features
 
 ---
 
-## <img src="https://raw.githubusercontent.com/MartinVerreault/MartinVerreault/master/icon-download.gif" width="30px"> 📥 Clean Installation Guide
+## 📥 Installation:
 
-### <img src="https://img.icons8.com/fluent/48/000000/arm-muscles.png" width="20px"> 🦾 Step 1: Requirements
-Make sure you have the latest version of **Termux** and **Termux-Api** apps installed on your device.
+1 - Install [Termux](https://github.com/termux/termux-app/releases/latest) & [Termux-Api](https://github.com/termux/termux-api/releases/latest)
 
-### <img src="https://img.icons8.com/fluent/48/000000/keyboard.png" width="20px"> 💻 Step 2: Run Commands
-Open your Termux app and execute the following commands one by one:
+2 - From Termux command line:
 
-1. **Grant Storage Permission:**
 ```bash
 termux-setup-storage
 ```
