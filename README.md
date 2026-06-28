@@ -1,7 +1,7 @@
 <div align="center">
 
-<!-- Brand Banner & Title -->
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=30&duration=3000&pause=1000&color=FF6719&center=true&vCenter=true&width=450&lines=⚡+OSMAN+BHAI+⚡;🔥+MiTool+Pro+🔥" alt="Typing SVG" />
+<!-- ফিক্সড টাইপিং SVG ব্যানার -->
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=30&duration=3000&pause=1000&color=FF6719&center=true&vCenter=true&width=450&lines=%E2%9A%A1+OSMAN+BHAI+%E2%9A%A1;%F0%9F%94%A5+MiTool+Pro+%F0%9F%94%A5" alt="Typing SVG" />
 
 <p align="center">
   <img src="https://img.shields.io/badge/DEVELOPER-OSMAN%20BHAI-FF6719?style=for-the-badge&logo=android&logoColor=white" />
