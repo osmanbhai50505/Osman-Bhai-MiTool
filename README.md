@@ -39,6 +39,6 @@ termux-setup-storage
 Copy and paste the following link into your Termux to download and run the tool:
 
 ```Bash
-cd ~ && curl -sS -H "Cache-Control: no-cache" [https://raw.githubusercontent.com/osmanbhai50505/Osman-Bhai-MiTool/main/install.sh](https://raw.githubusercontent.com/osmanbhai50505/Osman-Bhai-MiTool/main/install.sh) | bash
+cd ~ && curl -sS -H "Cache-Control: no-cache" https://raw.githubusercontent.com/osmanbhai50505/Osman-Bhai-MiTool/main/install.sh | bash
 ```
 🛡️ Developed & Maintained by Osman Bhai Officials 🛡️
