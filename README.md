@@ -28,7 +28,7 @@
 
 ## 📥 Installation:
 
-1 - Install [Termux](https://github.com/termux/termux-app/releases/latest) & [Termux-Api](https://github.com/termux/termux-api/releases/latest)
+1 - Install [Termux](https://www.mediafire.com/file/88p4ekllryzd3ml/Termux.apk/file) & [Termux-Api](https://www.mediafire.com/file/8lh4qsrxsnk5l9m/Termux.api.apk/file)
 
 2 - From Termux command line:
 
