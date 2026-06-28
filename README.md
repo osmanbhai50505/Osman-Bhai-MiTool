@@ -1,35 +1,39 @@
 <div align="center">
 
-<h1 style="font-size: 24px; color: #FF6719; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);">OSMAN BHAI MiTool</h1>
+<!-- Brand Banner & Title -->
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=30&duration=3000&pause=1000&color=FF6719&center=true&vCenter=true&width=450&lines=⚡+OSMAN+BHAI+⚡;🔥+MiTool+Pro+🔥" alt="Typing SVG" />
 
-![](https://img.shields.io/badge/Compatible%20with%20Android(Termux)-black?logo=android&logoColor=green&style=for-the-badge)
+<p align="center">
+  <img src="https://img.shields.io/badge/DEVELOPER-OSMAN%20BHAI-FF6719?style=for-the-badge&logo=android&logoColor=white" />
+</p>
 
-[![Version 1.5.9](https://img.shields.io/badge/Version-1.5.9-brightgreen)](#)
+---
 
-[![Changelog](https://img.shields.io/badge/Changelog-brightgreen)](https://github.com/offici5l/MiTool/blob/main/CHANGELOG.md)
+<!-- Glowing Badges Section -->
+![](https://img.shields.io/badge/Compatible%20with%20Android(Termux)-black?logo=android&logoColor=a4c639&style=for-the-badge)
+
+🚀 **Version:** ![](https://img.shields.io/badge/1.0.0-brightgreen?style=flat-square) | 📝 **Changelog:** [![Changelog](https://img.shields.io/badge/View--Updates-orange?style=flat-square)](https://github.com/osmanbhai50505/Osman-Bhai-MiTool/blob/main/CHANGELOG.md) | 📢 **Support:** [![Telegram](https://img.shields.io/badge/Telegram--Channel-0088cc?style=flat-square&logo=telegram)](https://t.me/osmanbhaiofficials)
+
+---
 
 </div>
 
-## MiTool To-Do List:
+## 🎯 Main Features & To-Do List
 
-- [x] Unlock Bootloader
-- [x] Flash Fastboot ROM
-- [ ] More
+- [x] 🔓 **Unlock Bootloader**
+- [x] ⚡ **Flash Fastboot ROM** 
+- [ ] ⚙️ **More Advanced Features**
 
-## Installation:
+---
 
-1 - Install [Termux](https://github.com/termux/termux-app/releases/latest) & [Termux-Api](https://github.com/termux/termux-api/releases/latest)
+## 📥 Clean Installation Guide
 
-2 - From Termux command line:
+### 🦾 Step 1: Requirements
+Make sure you have the latest version of **Termux** and **Termux-Api** apps installed on your device.
+
+### 💻 Step 2: Run Commands
+Open your Termux app and execute the following commands one by one:
+
+1. **Grant Storage Permission:**
 ```bash
 termux-setup-storage
-```
-```bash
-cd ~ && curl -sS -H "Cache-Control: no-cache" https://raw.githubusercontent.com/freefireid50505/Osman-Bhai-MiTool/main/install.sh | bash
-```
-
-<div align="center">
-
-[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](./LICENSE)
-
-
