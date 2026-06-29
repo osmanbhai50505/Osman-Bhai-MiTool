@@ -4,15 +4,14 @@ import subprocess
 import sys
 import os
 
-version = "1.5.9"
+version = "1.0.1"
 
-# 🎨 কালার কনফিগারেশন
-CYAN_MAIN = "\033[1;36m"   # মেইন টেক্সট কালার
-WHITE = "\033[1;37m"       # নম্বর কালার
-DIM = "\033[2m"
-BOLD = "\033[1m"
-RED = "\033[1;31m"
-RESET = "\033[0m"
+# 🎨 সম্পূর্ণ কাস্টমাইজড সায়ান থিম কালার কনফিগারেশন
+CYAN_MAIN = "\033[1;36m"   # মেইন টেক্সট, বর্ডার ও লিংকের সায়ান কালার
+WHITE = "\033[1;37m"       # নম্বর ও ব্র্যাকেটের জন্য পরিষ্কার সাদা কালার
+BOLD = "\033[1m"           # টেক্সট মোটা করার জন্য
+RED = "\033[1;31m"         # এরর মেসেজের জন্য লাল কালার
+RESET = "\033[0m"          # কালার রিসেট করার জন্য
 
 TOOLS = {
     "1": ("Unlock Bootloader", "$PREFIX/bin/miunlock"),
@@ -27,37 +26,39 @@ except:
     term_width = 80
 
 def get_center(text):
-    clean = text.replace(CYAN_MAIN, '').replace(RESET, '').replace(DIM, '').replace(WHITE, '')
+    # কালার কোড ছাড়া শুধু টেক্সটের সঠিক দৈর্ঘ্য মেপে সেন্টারিং করার ফাংশন
+    clean = text.replace(CYAN_MAIN, '').replace(RESET, '').replace(WHITE, '')
     pad = (term_width - len(clean)) // 2
     return ' ' * pad + text
 
 print("\n")
-print(get_center(f"{DIM}{'═' * min(term_width, 70)}{RESET}"))
+# বর্ডার লাইন সম্পূর্ণ সায়ান কালার করা হলো
+print(get_center(f"{CYAN_MAIN}{'═' * min(term_width, 70)}{RESET}"))
 
-# 🛠️ ওসমান ভাই ব্র্যান্ডিং টাইটেল
+# 🛠️ ওসমান ভাই ব্র্যান্ডিং টাইটেল বক্স
 title = f"Osman Bhai MiTool v{version}"
 box_width = len(title) + 4
-print(get_center(f"┏{'━' * (box_width - 2)}┓"))
-print(get_center(f"┃  {CYAN_MAIN}Osman Bhai MiTool{RESET} {DIM}v{version}{RESET}  ┃"))
-print(get_center(f"┗{'━' * (box_width - 2)}┛"))
+print(get_center(f"{CYAN_MAIN}┏{'━' * (box_width - 2)}┓{RESET}"))
+print(get_center(f"{CYAN_MAIN}┃  Osman Bhai MiTool{RESET} {WHITE}v{version}{RESET}{CYAN_MAIN}  ┃{RESET}"))
+print(get_center(f"{CYAN_MAIN}┗{'━' * (box_width - 2)}┛{RESET}"))
 
-print(get_center(f"{DIM}https://t.me/osmanbhaiofficials{RESET}"))
-print(get_center(f"{DIM}{'═' * min(term_width, 70)}{RESET}"))
+# টেলিগ্রাম লিংকও এখন সায়ান কালারে জ্বলজ্বল করবে
+print(get_center(f"{CYAN_MAIN}https://t.me/osmanbhaiofficials{RESET}"))
+print(get_center(f"{CYAN_MAIN}{'═' * min(term_width, 70)}{RESET}"))
 print()
 
 print(f"{CYAN_MAIN}{BOLD}Available Operations:{RESET}\n")
 
-# 📊 অদৃশ্য কালার কোড বাদ দিয়ে নিখুঁত কলাম স্পেসিং লজিক
-col_width = 32  # কলামের স্ট্যান্ডার্ড দূরত্ব
+# 📊 ২ কলামের নিখুঁত স্পেসিং লজিক (যাতে কাছাকাছি লেগে না যায়)
+col_width = 32  
 
 # ১ম লাইন সাজানো (Unlock Bootloader এবং Flash Fastboot ROM)
 text1_left = f"  [{WHITE}1{RESET}] {CYAN_MAIN}Unlock Bootloader{RESET}"
 text1_right = f"[{WHITE}2{RESET}] {CYAN_MAIN}Flash Fastboot ROM{RESET}"
-# কালার কোড ছাড়া আসল টেক্সটের দৈর্ঘ্য বের করে স্পেস বসানো
 pad1 = " " * (col_width - len("  [1] Unlock Bootloader"))
 print(f"{text1_left}{pad1}{text1_right}")
 
-print() # মাঝখানে সুন্দর ফাঁকা স্পেস
+print() # কলামগুলোর মাঝে সুন্দর ১ লাইনের ফাঁকা স্পেস
 
 # ২য় লাইন সাজানো (Mi Assistant এবং Firmware Extractor)
 text2_left = f"  [{WHITE}3{RESET}] {CYAN_MAIN}Mi Assistant{RESET}"
@@ -86,10 +87,11 @@ if choice in ['q', 'quit', 'exit']:
 
 if choice in TOOLS:
     desc, cmd = TOOLS[choice]
-    print(f"\n{CYAN_MAIN}►{RESET} {CYAN_MAIN}Executing:{RESET} {DIM}{cmd}{RESET}\n")
-    print(f"{DIM}{'─' * min(term_width, 70)}{RESET}\n")
+    # কমান্ড রান করার সময়কার মেসেজ ও নিচের ডিভাইডার লাইন সায়ান করা হলো
+    print(f"\n{CYAN_MAIN}►{RESET} {CYAN_MAIN}Executing:{RESET} {WHITE}{cmd}{RESET}\n")
+    print(f"{CYAN_MAIN}{'─' * min(term_width, 70)}{RESET}\n")
     subprocess.run(cmd, shell=True)
 else:
     print(f"{RED}✗ Invalid:{RESET} '{choice}'")
-    print(f"{DIM}Select 1-4 or 'q' to quit{RESET}\n")
+    print(f"{CYAN_MAIN}Select 1-4 or 'q' to quit{RESET}\n")
     sys.exit(1)
