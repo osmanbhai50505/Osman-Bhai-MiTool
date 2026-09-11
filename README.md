@@ -39,7 +39,7 @@
 ```bash
 termux-setup-storage
 ```
-2 - From Termux command line:
+3 - From Termux command line:
 
 ```bash
 pkg install -y git
