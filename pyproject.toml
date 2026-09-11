@@ -10,10 +10,10 @@ readme = "README.md"
 requires-python = ">=3.8"
 license = { text = "Apache-2.0" }
 authors = [
-    { name = "OSMAN BHAI", Telegram = "osmanbhaiofficials" }
+    { name = "OSMAN BHAI" }
 ]
 maintainers = [
-    { name = "Osman Bhai Officials", email = "your-email@example.com" }
+    { name = "OSMAN BHAI Officials" }
 ]
 dependencies = [
     "miunlock >= 1.7.3",
@@ -25,6 +25,7 @@ dependencies = [
 
 [project.urls]
 Repository = "https://github.com/osmanbhai50505/Osman-Bhai-MiTool"
+Telegram = "https://t.me/osmanbhaiofficials"
 Support = "https://t.me/osmanbhaiofficials"
 
 [project.scripts]
