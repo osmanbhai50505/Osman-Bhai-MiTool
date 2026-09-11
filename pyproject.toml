@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "osmanbhai-mitool"
+version = "1.6.0"
+description = "Cross-platform CLI for Xiaomi developed by Osman Bhai"
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "Apache-2.0" }
+authors = [
+    { name = "OSMAN BHAI", Telegram = "osmanbhaiofficials" }
+]
+maintainers = [
+    { name = "Osman Bhai Officials", email = "your-email@example.com" }
+]
+dependencies = [
+    "miunlock >= 1.7.3",
+    "miflash >= 1.0.0",
+    "miasst >= 1.4.1",
+    "miapply >= 1.0.1",
+    "fcetool >= 1.0.6",
+]
+
+[project.urls]
+Repository = "https://github.com/osmanbhai50505/Osman-Bhai-MiTool"
+Support = "https://t.me/osmanbhaiofficials"
+
+[project.scripts]
+mitool = "mitool.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["mitool*"]
